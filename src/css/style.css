@@ -1,0 +1,380 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container-shadow {
+    box-shadow: 0 0 30px black;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700px;
+    color: aqua;
+}
+
+.section-text {
+    font-size: 20px;
+    font-weight: 300px;
+    color: #fff;
+    line-height: 35px;
+}
+
+body {
+    background-color: #222222;
+}
+
+.nav-menu {
+    position: fixed;
+    background-color: #222221;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.699);
+    z-index: 1000;
+    line-height: 80px;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav {
+    float: right;
+}
+
+.nav-item {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+
+.nav-item:hover {
+    text-shadow: 0 0 2px aqua;
+    color: aquamarine;
+}
+
+.header {
+    height: 100vh;
+    padding-top: 80px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-background {
+    object-position: right center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.header-content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    padding: 30px;
+}
+
+.header-title {
+    font-size: 100px;
+    font-weight: 900;
+    color: #4e4d4d;
+    margin-bottom: 50px;
+}
+
+.header-text {
+    font-size: 50px;
+    color: #4e4d4d;
+    margin-bottom: 50px;
+}
+
+.header-btn {
+    display: block;
+    width: fit-content;
+    padding: 30px 80px;
+    background-image: linear-gradient(45deg, aqua, aquamarine);
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.header-btn:hover {
+    background-image: linear-gradient(45deg, rgb(126, 203, 244), rgb(247, 167, 239));
+    transform: scale(1.1);
+}
+
+.main-logos {
+    /* width: 50%;
+    height: 160px;
+    transform: translateX(50%);
+    left: -50%; */
+}
+
+.main-logos__item {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.main-logos-img {
+    display: block;
+    margin: 30px auto;
+    height: 120px;
+}
+
+.main-logos-text {
+    color: aquamarine;
+    font-size: 18px;
+}
+
+
+.games {
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+
+.games__pre-title{
+    color: aquamarine;
+    text-align: center;
+}
+
+.games__item {
+    margin: 0 auto;
+}
+
+.games__right-side,
+.games__left-side {
+    display: inline-block;
+    width: 49%;
+    height: 250px;
+    vertical-align: top;
+}
+
+.games__title,
+.games__deviver,
+.games__text {
+    margin: 10px;
+}
+
+
+.games__title {
+    color: aquamarine;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.games__deviver {
+    display: block;
+    width: 15%;
+    background: aquamarine;
+    height: 3px;
+}
+
+.games__text {
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.game-cs {
+    background: url("/src/img/csgo.jpg") center/cover no-repeat;
+}
+
+.game-dota {
+    background: url("/src/img/dota2.jpg") center/cover no-repeat;
+}
+
+.game-apex {
+    background: url("/src/img/apex.jpg") center/cover no-repeat;
+}
+
+/* .main-content-box2 {
+    width: 100%;
+    height: 50%;
+    display: block;
+} */
+
+.pre-footer {
+    width: 100%;
+    height: 100%;
+}
+
+.pre-footer-title {
+    margin: 25px;
+    text-align: center;
+    color: rgb(127, 193, 255);
+}
+
+.pre-footer-text {
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+}
+
+.footer__content {
+    padding: 10px;
+}
+
+.footer__title {
+    color: rgb(127, 193, 255);
+    text-align: center;
+    padding: 40px;
+}
+
+.footer__divider {
+    width: 150px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.footer__window {
+    background-color: rgb(127, 193, 255);
+    margin: 20px;
+    padding: 50px 40px;
+}
+
+.footer__text {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer__link {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    font-size: 12px;
+    float: right;
+}
+
+.form {
+    width: 70%;
+    background-color: #222222;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    margin: 50px auto;
+}
+
+.form__head {
+    height: 50px;
+    background-color: #65daff;
+    color:#fff;
+    line-height: 50px;
+    position: relative;
+}
+
+.form__button-back {
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    transition: 0.5s;
+}
+
+.form__button-back:hover{
+    background-color: #947f7f;
+    color: rgb(48, 46, 46);
+}
+
+.form__button-back:active{
+    background-color: black;
+    color: #fff;
+}
+
+.form__title {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    width: 89%;
+}
+
+.form__body {
+    /* text-align: center; */
+    color: #fff;
+    padding: 30px;
+}
+
+.form__container {
+    margin: 30px;
+}
+
+.form__text {
+    width: 100%;
+    height: 30px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #222222;
+    color: #fff;
+    border: none;
+    border-bottom:1px solid #353131;
+}
+
+.form__label {}
+
+.form__label--man {
+    margin-right: 20px;
+}
+
+.form__radio {
+    margin: 20px 3px 0;
+}
+
+.form__checkbox {
+    /* margin: 15px 3px; */
+    margin-right: 10px;
+}
+
+.game {
+    border-radius: 2px;
+    /* margin: 40px; */
+}
+
+.form__text-area {
+    background-color: #222;
+    border: 1px solid white;
+    width: 100%;
+    height: 500px;
+    border-top: 2px solid grey;
+}
+
+.form__btn {
+    width: 33%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #65daff;
+    display: block;
+    border: none;
+}
+
+.form__fieldset{
+    padding: 30px;
+}

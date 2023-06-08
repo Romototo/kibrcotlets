@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+    <form class="form" action="">
+        <div class="form__head">
+            <a class="form__button-back" href="#">{</a>
+            <h1 class="form__title">Заявка на вступление</h1>
+        </div>
+        <div class="form__body">
+            <div class="form__container">
+                <fieldset class="form__fieldset">
+                    <legend>Ваш никнейм в реальной жизни</legend>
+                    <input class="form__text" placeholder="Имя" type="text">
+                    <input class="form__text" placeholder="Фамилия" type="text">
+                </fieldset>
+            </div>
+
+            <div class="form__container">
+                <p сlass="form__label">Ваш пол</p>
+
+                <input class="form__radio" id="man" type="radio" name="gender">
+                <label class="form__label form__label--man" for="man">М</label>
+
+                <input class="form__radio" id="woman" type="radio" name="gender">
+                <label class="form__label" for="woman">Ж</label>
+            </div>
+
+            <div class="form__container">
+                <input class="form__checkbox" id="age" type="checkbox">
+                <label class="form__label" for="age">Мне есть 18</label>
+            </div>
+
+            <div class="form__container">
+                <label class="form__label" for="game">Ваша дисциплина</label>
+                <select class="game" id="game">
+                    <option value="csgo">CS:GO</option>
+                    <option value="dota">Dota 2</option>
+                    <option value="apex">Apex Legends</option>
+                </select>
+            </div>
+
+            <div class="form__container">
+                <textarea class="form__text-area" name="comment" id="comment"
+                    placeholder="Дополнительная информация"></textarea>
+            </div>
+
+            <button class="form__btn">Подать заявку</button>
+        </div>
+    </form>
+</body>
+
+</html>
